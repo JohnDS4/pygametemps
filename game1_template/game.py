@@ -135,7 +135,7 @@ def print_menu(exits):
     print("You can:")
     
     for i in exits :
-        print_menu_line(i, rooms[exits[i]]["name"])
+        print_menu_line(i, exit_leads_to(exits, i))
         
     print("Where do you want to go?")
 
